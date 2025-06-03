@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Hanken Grotesk', sans-serif;
+  background-color: hsl(221, 100%, 96%);
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.container {
+  width: 100%;
+  max-width: 375px;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.result-header {
+  background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  color: white;
+  border-radius: 0 0 20px 20px;
+  padding: 2rem;
+  text-align: center;
+}
+
+.result-header h1 {
+  font-size: 1rem;
+  color: hsl(221, 100%, 96%, 0.8);
+  margin-bottom: 1rem;
+}
+
+.score-circle {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  margin: 1.5rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.score {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.score-subtext {
+  color: hsl(241, 100%, 89%);
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: hsl(224, 30%, 27%);
+}
+
+p {
+  color: hsl(221, 100%, 96%, 0.8);
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+/* Summary Section */
+.summary-section {
+  padding: 1.5rem;
+}
+
+.summary-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  background-color: hsl(221, 100%, 96%);
+}
+
+.summary-items.item-1 {
+  background-color: hsl(0, 100%, 67%, 0.2);
+}
+
+.summary-items.item-2 {
+  background-color: hsl(39, 100%, 56%, 0.2);
+} 
+
+.summary-items.item-3 {
+  background-color: hsl(166, 100%, 37%, 0.2);
+}
+
+.summary-items.item-4 {
+  background-color: hsl(234, 85%, 45%, 0.2);
+}
+
+.flex {
+  gap: 0.75rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.label {
+  font-weight: 700;
+}
+
+.label-1 {
+  color: hsl(0, 100%, 67%);
+}
+
+.label-2 {
+  color: hsl(39, 100%, 56%);
+}
+
+.label-3 {
+  color: hsl(166, 100%, 37%);
+}
+
+.label-4 {
+  color: hsl(234, 85%, 45%);
+}
+
+.score {
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+}
+.secondary-score {
+  color: hsl(224, 30%, 27%);
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.secondary-score-subtext {
+  color: hsl(224, 30%, 27%, 0.5);
+  font-size: 1rem;
+}
+
+/* Button */
+.continue-btn {
+  background: hsl(224, 30%, 27%);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 1rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.continue-btn:hover {
+  background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  opacity: 0.9;
+}
+
+/* Responsive Design */
+@media screen and (min-width: 1080px) {
+  .container {
+    max-width: 736px;
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .result-header {
+    flex: 1;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem 2rem;
+  }
+
+  .result-header h1 {
+    font-size: 1.5rem;
+    color: hsl(221, 100%, 96%, 0.8);
+    margin-bottom: 1rem;
+  }
+
+  .result-header h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: hsl(0, 0%, 100%);
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+    color: hsl(221, 100%, 96%, 0.8);
+    padding: 0rem 2.5rem;
+    margin-bottom: 0rem;
+  }
+
+  .summary-section {
+    flex: 1;
+    padding: 2rem;
+  }
+
+  .score-circle {
+    width: 180px;
+    height: 180px;
+    margin: 2rem auto;
+  }
+
+  .score {
+    font-size: 4rem;
+  }
+  .secondary-score {
+    padding: 0;
+}
+
+  .summary-item {
+    padding: .5rem;
+  }
+
+  .continue-btn {
+    width: 100%;
+    padding: 1rem;
+    margin: 2rem 0;
+    
+  }
+}
+

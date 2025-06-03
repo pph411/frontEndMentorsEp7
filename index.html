@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Results summary component showing your performance across different categories">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentors | Results summary component</title>
+</head>
+<body>
+  <div class="container">
+    <header class="result-header">
+      <h1>Your Result</h1>
+      <div class="score-circle">
+        <span class="score">76</span>
+        <p class="score-subtext">of 100</p>
+      </div>
+      <h2>Great</h2>
+      <p>You scored higher than 65% of the people who have taken these tests.</p>
+    </header>
+
+    <section class="summary-section">
+      <h3>Summary</h3>
+      <div class="summary-items item-1">
+        <div class="flex">
+          <img src="./assets/images/icon-reaction.svg" alt="reaction" class="icon">
+          <span class="label label-1">Reaction</span>
+        </div>
+        <p class="secondary-score">80 <span class="secondary-score-subtext">/ 100</span></p>
+      </div>
+
+      <div class="summary-items item-2">
+        <div class="flex">
+          <img src="./assets/images/icon-memory.svg" alt="memory" class="icon">
+          <span class="label label-2">Memory</span>
+        </div>
+        <p class="secondary-score">92 <span class="secondary-score-subtext">/ 100</span></p>
+      </div>
+
+      <div class="summary-items item-3">
+        <div class="flex">
+          <img src="./assets/images/icon-verbal.svg" alt="verbal" class="icon">
+          <span class="label label-3">Verbal</span>
+        </div>
+        <p class="secondary-score">61 <span class="secondary-score-subtext">/ 100</span></p>
+      </div>
+
+      <div class="summary-items item-4">
+        <div class="flex">
+          <img src="./assets/images/icon-visual.svg" alt="visual" class="icon">
+          <span class="label label-4">Visual</span>
+        </div>
+        <p class="secondary-score">72 <span class="secondary-score-subtext">/ 100</span></p>
+      </div>
+
+      <button class="continue-btn">Continue</button>
+    </section>
+  </div>
+</body>
+</html> 

@@ -167,7 +167,7 @@ p {
 
 /* Button */
 .continue-btn {
-  background: hsl(224, 30%, 27%);
+  background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
   color: white;
   border: none;
   border-radius: 30px;
@@ -175,14 +175,15 @@ p {
   font-size: 1.125rem;
   font-weight: 700;
   cursor: pointer;
-  transition: opacity 0.3s ease;
-  margin: 1rem 0;
-  width: 100%;
+  transition: all 0.3s ease;
+  margin: 1rem 1.5rem 1.5rem;
+  width: calc(100% - 3rem);
 }
 
 .continue-btn:hover {
-  background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
   opacity: 0.9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Responsive Design */

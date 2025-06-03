@@ -12,7 +12,6 @@ This is a solution to the [Results summary component challenge on Frontend Mento
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 
@@ -30,12 +29,12 @@ Users should be able to:
 
 ### Screenshot
 
-[Imgur-mobile](https://i.imgur.com/mYQlsQR.jpg)
-[Imgur-desktop](https://i.imgur.com/eNd6EYN.jpg)
+[Scrennshot-mobile](/pph-mobile.png)
+[Scrennshot-desktop](/pph-desktop.png)
 
 ### Links
 
-- Live Site URL: []
+- Live Site URL: [https://pphfrontendmentorsep7.vercel.app/]
 
 ### Built with
 
